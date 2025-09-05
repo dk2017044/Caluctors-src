@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Calculator Website{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Welcome to Calculator Website</h1>
+    <p>Your go-to solution for all mathematical calculations</p>
+    <a href="{{ url_for('calculator') }}" class="cta-button">Try Calculator</a>
+</div>
+
+<div class="features">
+    <div class="feature">
+        <h2>Easy to Use</h2>
+        <p>Simple and intuitive interface for all your calculation needs</p>
+    </div>
+    <div class="feature">
+        <h2>Accurate Results</h2>
+        <p>Get precise calculations every time with our reliable tool</p>
+    </div>
+    <div class="feature">
+        <h2>Free Forever</h2>
+        <p>Our calculator is completely free with no hidden charges</p>
+    </div>
+</div>
+{% endblock %}
